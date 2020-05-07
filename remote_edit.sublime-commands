@@ -1,0 +1,23 @@
+[
+    {
+        "caption": "Remote Edit: Upload File",
+        "command": "remote_upload"
+    },
+    {
+        "caption": "Remote Edit: Download File",
+        "command": "remote_download"
+    },
+
+    // CS 107 (example command)
+    // Changes the default host to {SUNetID}@myth.stanford.edu
+    // Changes the default path to ~/cs107/
+    // Change the {SUNetID} replacement in remote_edit.py
+    // {
+    //     "caption": "Remote Edit: Download File (CS 107)",
+    //     "command": "remote_download",
+    //     "args": {
+    //         "defaultHost": "{SUNetID}@myth.stanford.edu",
+    //         "defaultPath": "~/cs107/"
+    //     }
+    // }
+]
