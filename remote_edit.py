@@ -1,6 +1,6 @@
 import sublime, sublime_plugin, os, subprocess
 
-# Variables that can be used in the host and pathname
+# Variables that can be used in the host and pathname (look at DEFAULT_HOST for example)
 TEMPLATE_ARGS = {
 	"SUNetID": "cfigg"
 }
@@ -8,7 +8,8 @@ TEMPLATE_ARGS = {
 DEFAULT_HOST = "{SUNetID}@cardinal.stanford.edu"
 DEFAULT_PATH = "~/"
 
-tries = 3
+# Number of times to try uploading/downloading before giving up
+TRIES = 3
 
 # Remote Download command to fetch a file and open it in a new tab
 class RemoteDownloadCommand(sublime_plugin.TextCommand):
