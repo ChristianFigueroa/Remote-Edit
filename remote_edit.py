@@ -47,8 +47,8 @@ class RemoteDownloadCommand(sublime_plugin.TextCommand):
 
 		# Will store the downloaded file as bytes
 		file = None
-		# Try to download file `tries' times before giving up
-		for i in range(tries):
+		# Try to download file `TRIES' times before giving up
+		for i in range(TRIES):
 			# If scp returns a non-0 code, an error is raised and caught
 			try:
 				# -B ensures scp will fail if a password is asked for
@@ -181,8 +181,8 @@ class RemoteUploadCommand(sublime_plugin.TextCommand):
 				diskFile.write(view.substr(sublime.Region(0, view.size())))
 				diskFile.close()
 
-			# Try `tries' number of times to upload
-			for i in range(tries):
+			# Try `TRIES' number of times to upload
+			for i in range(TRIES):
 				try:
 					subprocess.check_output(["scp", "-B", diskLoc, src])
 					window.status_message("Uploaded successfully")
