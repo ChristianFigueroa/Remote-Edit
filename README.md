@@ -3,7 +3,7 @@ Sublime Text 3 plugin to edit remote files on a server as a local file. (Mac OS 
 
 Instead of using `ssh` and then editing a file in the terminal using `emacs` or some other terminal-based text editor, this plugin will download the file from the server and open it in Sublime Text to make editing easier and faster. Saving the file in ST will automatically upload the file back to the server to save to the original file.
 
-I personally use this for CS 107's myth machines because I don't like using `emacs`.
+This plugin was helpful for me in classes that required me to submit/edit/run files on Stanford's myth machines as in CS 107.
 
 ### Usage
 Use the "Remote Edit: Download File" and "Remote Edit: Upload File" commands to open a remote file and save to a remote location respectively.
